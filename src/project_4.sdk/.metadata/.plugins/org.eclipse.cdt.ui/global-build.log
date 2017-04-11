@@ -1,0 +1,2211 @@
+21:20:59 **** Build of project mb_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+21:21:04 **** Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6892	    328	   3252	  10472	   28e8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:21:09 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26952	    344	   3248	  30544	   7750	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:22:42 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+22:19:36 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+22:19:50 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+22:22:47 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:01:40 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:04:29 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:14:52 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:15:55 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:48:03 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+23:48:46 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+10:10:28 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+13:24:00 **** Auto Build of project mb_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+13:24:19 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26952	    344	   3248	  30544	   7750	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:24:50 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+13:34:59 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+15:24:11 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26952	    344	   3248	  30544	   7750	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+15:26:59 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+19:08:51 **** Build of project mb_simple_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in microblaze_0/libsrc/bram_v4_1/src"
+make -C microblaze_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_5/src"
+make -C microblaze_0/libsrc/cpu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_1/src"
+make -C microblaze_0/libsrc/gpio_v4_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_5/src"
+make -C microblaze_0/libsrc/intc_v3_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v5_5/src"
+make -C microblaze_0/libsrc/standalone_v5_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.6 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling uartlite"
+'Finished building libraries'
+19:09:15 **** Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:138:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26952	    344	   3248	  30544	   7750	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:18:04 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:141:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26952	    344	   3248	  30544	   7750	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:20:17 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:141:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:129:6: warning: unused variable 'leftDab' [-Wunused-variable]
+  int leftDab = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37596	   1384	   3316	  42296	   a538	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:20:49 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:141:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:129:6: warning: unused variable 'newMove' [-Wunused-variable]
+  int newMove = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37596	   1384	   3316	  42296	   a538	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:21:19 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:142:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:130:6: warning: unused variable 'nextMove' [-Wunused-variable]
+  int nextMove = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37596	   1384	   3316	  42296	   a538	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:24:32 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:19: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+                   ^
+../src/helloworld.c:130:25: error: 't' undeclared (first use in this function)
+  srand((unsigned) time(&t));
+                         ^
+../src/helloworld.c:130:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:143:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:131:6: warning: unused variable 'nextMove' [-Wunused-variable]
+  int nextMove = (rand() %2 + 1);
+      ^
+make: *** [src/helloworld.o] Error 1
+19:24:45 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:19: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+                   ^
+../src/helloworld.c:144:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:132:6: warning: unused variable 'nextMove' [-Wunused-variable]
+  int nextMove = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../mb_simple_bsp/microblaze_0/lib\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+(.text+0x2c): undefined reference to `gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [mb_simple.elf] Error 1
+19:48:19 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:131:19: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+  srand((unsigned) time(&t));
+                   ^
+../src/helloworld.c:146:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:132:6: warning: unused variable 'nextMove' [-Wunused-variable]
+  int nextMove = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../mb_simple_bsp/microblaze_0/lib\libc.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+(.text+0x2c): undefined reference to `gettimeofday'
+collect2.exe: error: ld returned 1 exit status
+make: *** [mb_simple.elf] Error 1
+19:50:08 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:144:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:130:6: warning: unused variable 'nextMove' [-Wunused-variable]
+  int nextMove = (rand() %2 + 1);
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37596	   1384	   3316	  42296	   a538	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:50:40 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:145:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37612	   1384	   3316	  42312	   a548	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:54:20 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:136:6: warning: unused variable 'score' [-Wunused-variable]
+  int score = 0;
+      ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37616	   1384	   3312	  42312	   a548	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:55:10 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37812	   1384	   3316	  42512	   a610	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:55:23 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37828	   1384	   3316	  42528	   a620	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:56:50 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37832	   1384	   3312	  42528	   a620	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:56:59 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37816	   1384	   3312	  42512	   a610	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:57:07 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37832	   1384	   3312	  42528	   a620	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:57:22 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37816	   1384	   3312	  42512	   a610	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:58:52 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37804	   1384	   3316	  42504	   a608	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:58:57 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37792	   1384	   3312	  42488	   a5f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:59:09 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37792	   1384	   3312	  42488	   a5f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+19:59:42 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:220:7: error: expected ';' before 'nextMove'
+       nextMove = (rand() %2 + 1);)
+       ^
+../src/helloworld.c:220:34: error: expected statement before ')' token
+       nextMove = (rand() %2 + 1);)
+                                  ^
+make: *** [src/helloworld.o] Error 1
+19:59:44 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:220:7: error: expected ';' before 'nextMove'
+       nextMove = (rand() %2 + 1);
+       ^
+make: *** [src/helloworld.o] Error 1
+20:00:31 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37972	   1384	   3316	  42672	   a6b0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:01:49 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37988	   1384	   3316	  42688	   a6c0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:02:18 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37988	   1384	   3316	  42688	   a6c0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:02:22 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37988	   1384	   3316	  42688	   a6c0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:02:29 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37956	   1384	   3316	  42656	   a6a0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:02:57 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37932	   1384	   3316	  42632	   a688	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:05:20 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37868	   1384	   3316	  42568	   a648	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:05:27 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:14:10 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:14:49 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:19:30 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:21:29 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37872	   1384	   3312	  42568	   a648	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:21:35 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:22:00 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37872	   1384	   3312	  42568	   a648	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:22:04 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:22:28 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37872	   1384	   3312	  42568	   a648	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:22:32 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:23:18 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37960	   1384	   3312	  42656	   a6a0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:23:23 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37944	   1384	   3312	  42640	   a690	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:23:27 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:33:10 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+20:57:04 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37960	   1384	   3312	  42656	   a6a0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:57:17 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37964	   1384	   3316	  42664	   a6a8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+20:57:23 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37968	   1384	   3312	  42664	   a6a8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:14:34 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:16:18 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37960	   1384	   3312	  42656	   a6a0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:17:08 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37964	   1384	   3316	  42664	   a6a8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:17:14 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:19:41 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:21:01 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37980	   1384	   3316	  42680	   a6b8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:21:10 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37996	   1384	   3316	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:21:18 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:243:13: error: invalid digit "8" in octal constant
+      *led = 0128;
+             ^
+make: *** [src/helloworld.o] Error 1
+21:21:22 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38000	   1384	   3312	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:21:29 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:24:47 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37996	   1384	   3316	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:24:53 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38000	   1384	   3312	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:25:20 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38000	   1384	   3312	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:25:22 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38000	   1384	   3312	  42696	   a6c8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:25:33 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:27:41 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37904	   1384	   3312	  42600	   a668	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:27:59 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+21:30:30 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37888	   1384	   3312	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:30:44 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:30:50 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:150:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37900	   1384	   3316	  42600	   a668	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:30:58 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+21:31:01 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:148:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:32:29 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:32:34 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:36:06 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:36:11 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:36:23 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37888	   1384	   3312	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:37:22 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37888	   1384	   3312	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:38:35 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37884	   1384	   3316	  42584	   a658	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:39:23 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:41:42 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:45:19 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37880	   1384	   3312	  42576	   a650	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:45:41 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37976	   1384	   3312	  42672	   a6b0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:46:28 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38176	   1384	   3312	  42872	   a778	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:46:47 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38152	   1384	   3312	  42848	   a760	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:47:06 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:48:18 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38176	   1384	   3312	  42872	   a778	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:48:22 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:50:01 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37904	   1384	   3312	  42600	   a668	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:50:03 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:52:13 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:55:16 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38128	   1384	   3312	  42824	   a748	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:55:21 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+16:59:24 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38124	   1384	   3316	  42824	   a748	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:59:45 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38104	   1384	   3312	  42800	   a730	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+16:59:49 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+17:09:17 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37892	   1384	   3316	  42592	   a660	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+17:09:19 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+13:39:11 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:209:7: error: expected expression before '/' token
+       /nextMove = (rand() %3);
+       ^
+make: *** [src/helloworld.o] Error 1
+13:39:14 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38092	   1384	   3316	  42792	   a728	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:40:34 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:231:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 2 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38292	   1384	   3316	  42992	   a7f0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:40:45 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:231:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 2 ){
+       ^
+../src/helloworld.c:253:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 0 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38488	   1384	   3312	  43184	   a8b0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:41:25 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:231:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 2 ){
+       ^
+../src/helloworld.c:253:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 0 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38488	   1384	   3312	  43184	   a8b0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:41:35 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:231:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 2 ){
+       ^
+../src/helloworld.c:253:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 0 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38488	   1384	   3312	  43184	   a8b0	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:42:10 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:206:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 1 ){
+       ^
+../src/helloworld.c:254:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 0 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38340	   1384	   3316	  43040	   a820	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:42:23 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+../src/helloworld.c:255:7: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+       while( nextMove = (rand() %3) == 0 ){
+       ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38192	   1384	   3312	  42888	   a788	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:44:54 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:46:09 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:46:20 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:46:31 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:46:43 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:47:08 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:50:42 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38048	   1384	   3312	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+13:51:33 **** Auto Build of configuration Debug for project mb_simple ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../mb_simple_bsp/microblaze_0/include -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:149:10: warning: implicit declaration of function 'XUartLite_RecvByte' [-Wimplicit-function-declaration]
+    inp = XUartLite_RecvByte(XPAR_UARTLITE_0_BASEADDR);
+          ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mb_simple.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mb_simple_bsp/microblaze_0/lib -mlittle-endian -mcpu=v9.6 -mxl-soft-mul -Wl,--no-relax -o "mb_simple.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mb_simple.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mb_simple.elf  |tee "mb_simple.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38044	   1384	   3316	  42744	   a6f8	mb_simple.elf
+'Finished building: mb_simple.elf.size'
+' '
+14:17:36 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+14:20:12 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+15:17:24 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+15:40:45 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Mar 29 20:49:40 2017
+# Process ID: 2704
+# Current directory: C:/ece532/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7072 C:\ece532\project_4\project_4.xpr
+# Log file: C:/ece532/project_4/vivado.log
+# Journal file: C:/ece532/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ece532/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/ece532/project_4/project_4.sdk -hwspec C:/ece532/project_4/project_4.sdk/design_1_wrapper.hdf

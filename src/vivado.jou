@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Mar 31 15:14:54 2017
+# Process ID: 2256
+# Current directory: C:/ece532/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3728 C:\ece532\project_4\project_4.xpr
+# Log file: C:/ece532/project_4/vivado.log
+# Journal file: C:/ece532/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ece532/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/ece532/project_4/project_4.sdk -hwspec C:/ece532/project_4/project_4.sdk/design_1_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/ece532/project_4/project_4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/ece532/project_4/project_4.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

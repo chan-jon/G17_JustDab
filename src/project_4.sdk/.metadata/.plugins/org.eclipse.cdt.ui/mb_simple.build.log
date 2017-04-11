@@ -1,0 +1,6 @@
+15:40:45 **** Incremental Build of configuration Debug for project mb_simple ****
+make all 
+make: Nothing to be done for `all'.
+
+15:40:46 Build Finished (took 1s.201ms)
+
