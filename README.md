@@ -7,6 +7,14 @@ Just Dab - A Movement-Based Game Using a Host Computer WebCam, Neural Network, a
 * Ted (Mingyi) Jia
 ## Desc: 
 Movement based game with a neural network for detection of movement accuracy on a Xilinx Nexys 4 FPGA
+## Repository Structure
+```
+.
+├── docs				# Final Report Documentation and Presentation Slides
+├── input				# Program and Scripts for providing input to FPGA
+├── src					# Vivado 2016.2 Project Files
+├── README.md
+```
 ## How to use:
 * Requires a Host computer with Administrative privileges
 * Requires a Host computer with Python installed
@@ -45,7 +53,7 @@ ffmpeg -list_devices true -f dshow -i dummy
 python pngdecode.py
 ```
 3. Double-click the "capture_1sec.bat" script to start capturing from the WebCam
-4. Stay still for the first few pictures to calibrate the Neural Network
+4. Stay still for the first few pictures to calibrate
    * Note: Some WebCams need to be warmed up first before getting a clear picture, please take a few pictures to warmup the camera
    
 
