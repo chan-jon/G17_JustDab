@@ -6,7 +6,7 @@ Just Dab
 * Jonathan Chan
 * Mingyi (Ted) Jia
 ## Description: 
-Dance game based using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
+Dance-based game using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
 ## Repository Structure
 ```
 .
