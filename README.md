@@ -1,12 +1,12 @@
 # G17_JustDab
 ## Name: 
-Just Dab - A Movement-Based Game Using a Host Computer WebCam, Neural Network, and Xilinx FPGA
+Just Dab
 ## Authors:
 * Maxim Antipin
 * Jonathan Chan
 * Ted (Mingyi) Jia
-## Desc: 
-Movement based game with a neural network for detection of movement accuracy on a Xilinx Nexys 4 FPGA
+## Description: 
+Dance game based on "Just Dance", a popular movement-based detection game using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
 ## Repository Structure
 ```
 .
