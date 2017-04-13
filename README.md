@@ -6,7 +6,7 @@ Just Dab
 * Jonathan Chan
 * Mingyi (Ted) Jia
 ## Description: 
-Dance game based on "Just Dance", a popular movement-based detection game using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
+Dance game based using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
 ## Repository Structure
 ```
 .
@@ -30,7 +30,8 @@ Dance game based on "Just Dance", a popular movement-based detection game using 
    2. Under "Run" and clicking "Run Configurations..."
    3. Click the "STDIO Connection" tab and check the Port that is listed here
       * OR Open device manager and check under COM ports the port number the board is connected to
-   4. Make note of the COM port
+   4. Uncheck the "Connect STDIO to Console" box
+   5. Make note of the COM port
 6. In the /input folder, edit "pngdecode.py" and modify the COM port used for sending data to the FPGA:
 ```
 port = 'COM4',
