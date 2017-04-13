@@ -4,7 +4,7 @@ Just Dab
 ## Authors:
 * Maxim Antipin
 * Jonathan Chan
-* Ted (Mingyi) Jia
+* Mingyi (Ted) Jia
 ## Description: 
 Dance game based on "Just Dance", a popular movement-based detection game using a host computer WebCam, Xilinx Nexys 4 DDR FPGA, low-res monitor, and a Artifical Neural Network (ANN) for detection.
 ## Repository Structure
