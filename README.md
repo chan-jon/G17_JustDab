@@ -46,7 +46,7 @@ ffmpeg -list_devices true -f dshow -i dummy
 -video="<INSERT WEBCAM NAME HERE>"
 ```
 9. Position the WebCam so that you are positioned in the middle and your shoulders are positioned at the bottom of the picture
-   * About 4 feet away (or roughly 7 x Nexys 4 DDR Boxes away from the WebCam)
+   * About 6 feet away (or roughly 7 x Nexys 4 DDR Boxes away from the WebCam)
 ### Run
 1. On the Xilinx SDK, click "Run" to start the Neural Network on the FPGA
 2. Open a command prompt inside the /input folder and run the command:
