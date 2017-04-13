@@ -10,5 +10,5 @@ Movement based game with a neural network for detection of movement accuracy on 
 
 ## Authors:
 * Maxim Antipin
-* Ted (Mingyi) Jia
 * Jonathan Chan
+* Ted (Mingyi) Jia
