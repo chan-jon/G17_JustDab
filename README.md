@@ -9,6 +9,6 @@ Movement based game with a neural network for detection of movement accuracy on 
 3. On Viva
 
 ## Authors:
-Maxim Antipin
-Ted (Mingyi) Jia
-Jonathan Chan
+* Maxim Antipin
+* Ted (Mingyi) Jia
+* Jonathan Chan
