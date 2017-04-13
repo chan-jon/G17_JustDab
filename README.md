@@ -1,6 +1,6 @@
 # G17_JustDab
 ## Name: 
-Just Dab - Movement Based Game 
+Just Dab - A Movement-Based Game Using a Host Computer WebCam, Neural Network, and Xilinx FPGA
 ## Authors:
 * Maxim Antipin
 * Jonathan Chan
